@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0055)https://www.html5tricks.com/demo/jiaoben1892/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>大宝和小包</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="./大宝小包的故事_files/default.css" type="text/css" rel="stylesheet">
+<script src="./大宝小包的故事_files/osd.js"></script><script src="./大宝小包的故事_files/f.txt" id="google_shimpl"></script><script type="text/javascript" src="./大宝小包的故事_files/jquery.js"></script>
+<script type="text/javascript" src="./大宝小包的故事_files/garden.js"></script>
+<script type="text/javascript" src="./大宝小包的故事_files/functions.js"></script>
+
+<link rel="preload" href="./大宝小包的故事_files/f(1).txt" as="script"><script type="text/javascript" src="./大宝小包的故事_files/f(1).txt"></script></head>
+
+<body>
+
+<script src="./大宝小包的故事_files/follow.js" type="text/javascript"></script>
+</div>
+<div id="mainDiv">
+	<div id="content" style="width: 1110px; height: 625px; margin-top: 131.5px; margin-left: 396.5px;">
+		<div id="code" style="margin-top: 112.5px;">
+			<span class="comments">/**</span><br>
+			<span class="space"><span class="comments">*2013—01-04,</span><br>
+			<span class="space"><span class="comments">*2020-now.</span><br>
+			<span class="space"><span class="comments">*/</span><br>
+			Boy name = <span class="keyword">Mr</span> ZHENG<br>
+			Girl name = <span class="keyword">Mrs</span> Yu<br>
+			<span class="comments">// Fall in love river. </span><br>
+			The boy love the girl;<br>
+			<span class="comments">// They love each other.</span><br>
+			The girl loved the boy;<br>
+			<span class="comments">// AS time goes on.</span><br>
+			The boy can not be separated the girl;<br>
+			<span class="comments">// At the same time.</span><br>
+			The girl can not be separated the boy;<br>
+			<span class="comments">// Both wind and snow all over the sky.</span><br>
+			<span class="comments">// Whether on foot or 5 kilometers.</span><br>
+			<span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br>
+			<span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br>
+			<span class="placeholder"><span class="comments">// Whether it is right now</span><br>
+			<span class="placeholder"><span class="comments">// Still in the distant future.</span><br>
+			<span class="placeholder">The boy has but one dream;<br>
+			<span class="comments">// The boy wants the girl could well have been happy.</span><br>
+			<br>
+			<br>
+			I want to say:<br>
+			Baby, I love you forever;<br>
+		</span></span></span></span></span></span></div>
+		<div id="loveHeart">
+			<canvas id="garden" width="670" height="625"></canvas>
+			<div id="words" style="position: absolute; top: 586.5px; left: 906.5px;">
+				<div id="messages" style="display: block;">
+					大宝，这是我们相爱在一起的时光。
+					<div id="elapseClock"><span class="digit">2472</span> days <span class="digit">22</span> hours <span class="digit">57</span> minutes <span class="digit">41</span> seconds</div>
+				</div>
+				<div id="loveu" style="display: block;">
+					爱你直到永永远远。<br>
+					<div class="signature">- 小包</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0px;width:0px;height:0px;" src="./大宝小包的故事_files/saved_resource(1).html"></iframe></ins></ins></ins><script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2013, 2, 28);
+together.setHours(20);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
